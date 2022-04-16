@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import './Header.scss'
-import BrainFlixLogo from '../../assets/Logo/Logo-brainflix.svg'
+import '../../styles/header.css'
+import BrainFlixLogo from '../../assets/images/BrainFlixLogo'
 import AvatarImage from '../../assets/Images/Mohan-muruge.jpg'
 import SearchBox from "../SearchBox/SearchBox";
 
