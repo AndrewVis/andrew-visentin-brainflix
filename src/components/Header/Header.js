@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Header.scss'
-import BrainFlixLogo from '../../assets/Logo/Logo-brainflix.svg'
-import AvatarImage from '../../assets/Images/Mohan-muruge.jpg'
+import BrainFlixLogo from '../../assets/images/BrainFlix-logo.svg'
+import AvatarImage from '../../assets/images/Mohan-muruge.jpg'
 import SearchBox from "../SearchBox/SearchBox";
 
 export default class Header extends Component {

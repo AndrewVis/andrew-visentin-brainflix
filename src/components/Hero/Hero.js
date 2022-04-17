@@ -1,6 +1,6 @@
 import './Hero.scss'
-import viewsIcon from '../../assets/Icons/Icon-views.svg'
-import likesIcon from '../../assets/Icons/Icon-likes.svg'
+import viewsIcon from '../../assets/images/views.svg'
+import likesIcon from '../../assets/images/likes.svg'
 import FormatDate from '../../utils/FormatDate'
 
 const Hero = (props) => {

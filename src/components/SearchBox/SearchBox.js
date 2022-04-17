@@ -1,4 +1,4 @@
-import SearchImage from '../../assets/Icons/Icon-search.svg'
+import SearchImage from '../../assets/images/search.svg'
 
 const SearchBox = ({ placeholder }) => (
     <input

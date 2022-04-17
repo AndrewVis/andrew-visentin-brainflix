@@ -1,12 +1,12 @@
 import './App.scss';
-import Header from './components/component/Header';
+import Header from './components/Header/Header';
 import VideoDetails from "./data/video-details.json";
 import Videos from "./data/videos.json";
-import Hero from './components/component/Hero';
-import Comments from './components/component/SearchBox';
+import Hero from './components/Hero/Hero';
+import Comments from './components/SearchBox/SearchBox';
 import { Component } from 'react';
-import VideoList from './components/component/VideoList';
-import Videoplayer from './components/component/VideoPlayer';
+import VideoList from './components/VideoList/VideoList';
+import Videoplayer from './components/VideoPlayer/VideoPlayer';
 
 class App extends Component {
   state = {

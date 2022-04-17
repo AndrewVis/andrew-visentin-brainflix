@@ -1,5 +1,5 @@
 import React from 'react'
-import './Videoplayer.scss'
+import '../VideoPlayer/VideoPlayer.scss'
 
 
 const Videoplayer = (props) => {
