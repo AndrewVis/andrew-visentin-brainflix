@@ -1,4 +1,4 @@
-import AvatarImage from '../../assets/Images/Mohan-muruge.jpg'
+import AvatarImage from '../../assets/images/Mohan-muruge.jpg'
 import React from 'react'
 import FormatDate from '../../utils/FormatDate'
 import './Comments.scss'

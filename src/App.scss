@@ -1,8 +1,8 @@
-@use './assets/fonts/' as*;
+@use './styles/partials/fonts.scss' as*;
 @use '../src/components/Header/Header' as*; 
-@use './styles/partials/_mixins' as*;
-@use './styles/partials/_variables' as*;
-@use './styles/partials/_globals' as*;
+@use './styles/partials/mixins' as*;
+@use './styles/partials/variables' as*;
+@use './styles/partials/globals' as*;
 
 html{
     font-family: 'AvenirNextLTPro';
