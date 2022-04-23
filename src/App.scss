@@ -1,24 +1,9 @@
-@use './styles/partials/fonts.scss' as*;
+@use './partials/fonts' as*;
 @use '../src/components/Header/Header' as*; 
-@use './styles/partials/mixins' as*;
-@use './styles/partials/variables' as*;
-@use './styles/partials/globals' as*;
+@use './partials/_mixins' as*;
+@use './partials/_variables' as*;
+@use './partials/_globals' as*;
 
 html{
     font-family: 'AvenirNextLTPro';
-}
-
-.App{
-
-    @include desktop{
-
-        
-        &-container{
-            display: flex;
-        }
-        
-        &__left-container{
-            width: 75%;
-        }
-    }
 }
