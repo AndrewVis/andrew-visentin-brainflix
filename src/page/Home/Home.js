@@ -3,7 +3,7 @@ import Hero from '../../components/Hero/Hero';
 import Comments from '../../components/Comments/Comments'
 import { Component } from 'react';
 import VideoList from '../../components/VideoList/VideoList';
-import Videoplayer from '../../components/VideoPlayer/Videoplayer'
+import Videoplayer from '../../components/VideoPlayer/VideoPlayer';
 import { API_CALLS, API_URL, API_KEY } from '../../utils/API';
 import axios from 'axios';
 
