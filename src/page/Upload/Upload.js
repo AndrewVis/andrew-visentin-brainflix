@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Upload.scss'
-import ThumbnailImage from '../../assets/Images/Upload-video-preview.jpg'
+import ThumbnailImage from '../../assets/images/Upload-video-preview.jpg'
 import { Link } from 'react-router-dom'
 
 class Upload extends Component {
