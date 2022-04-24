@@ -1,0 +1,28 @@
+@use '../../partials/fonts' as*;
+@use '../../partials/_mixins' as*;
+@use '../../partials/_variables' as*;
+@use '../../partials/_globals' as*;
+
+html{
+    font-family: 'AvenirNextLTPro';
+}
+
+.Home{
+
+    @include desktop{
+
+        
+        &-container{
+            display: flex;
+        }
+        
+        &__left-container{
+            width: 75%;
+        }
+
+        &__right-contianer{
+            width: 75%;
+            
+        }
+    }
+}

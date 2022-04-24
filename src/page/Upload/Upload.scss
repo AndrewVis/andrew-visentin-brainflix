@@ -1,0 +1,209 @@
+@use '../../partials/fonts' as*;
+@use '../../partials/_mixins' as*;
+@use '../../partials/_variables' as*;
+@use '../../partials/_globals' as*;
+
+
+.upload{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-top: 1px solid $Mercury;
+    padding-top: 1.5rem;
+
+    @include tablet{
+        padding-top: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include desktop{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__title{
+        @include mobile-text-header;
+        padding-bottom: 2rem;
+
+        @include tablet{
+            @include desktab-text-h1-header;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid $Mercury;
+        }
+
+        @include desktop{
+      
+            margin-left: auto;
+            margin-right:auto;
+            width: 80%;
+        }
+    }
+
+    &__desktop-container{
+        @include desktop{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+    }
+
+    &__container{
+        @include desktop{
+            padding-right: 1.5rem;
+        }
+    }
+
+    &__thumbnail-title{
+        @include mobile-text-subheader;
+        color: $Silver;
+        font-weight: 600;
+
+        @include tablet{
+            padding-top: 2.5rem;
+
+        }
+    }
+
+    &__thumbnail-image{
+        width: 288px;
+        height: 153px;
+
+        @include tablet{
+            width: 344px;
+            height: 183px;
+        }
+        @include desktop{
+            height: 200px;
+        }
+    }
+
+    &__info-container{
+        padding-top: 2.5rem;
+
+        @include desktop{
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+    }
+
+    &__info-title{
+        @include mobile-text-subheader;
+        color: $Silver;
+        font-weight: 600;
+
+
+    }
+
+
+    &__form-name{
+        @include mobile-text-paragraph;
+        width: 100%;
+        border-radius:4px;
+        background-color: $Alabaster;
+        padding:1rem;
+        border: 2px solid $Mercury;
+        margin-bottom: 1.5rem;
+
+        @include tablet{
+            @include desktab-text-subheader;
+        }
+
+
+        &::placeholder {
+            color: black;
+            resize:none ;
+        }
+
+        &:focus{
+            outline: none;
+            border: 2px solid $Instock-blue;
+        }
+    }
+
+    &__form-description{
+        @include mobile-text-subheader;
+        color: $Silver;
+        font-weight: 600;
+
+    }
+    
+
+    &__form-input{
+        @include mobile-text-paragraph;
+        width: 100%;
+        resize: none;
+        border: 2px solid $Mercury;
+        border-radius: 4px;
+        background-color: $Alabaster;
+        padding: 1rem;
+        height: 143px;
+
+        @include tablet{
+            @include desktab-text-subheader;
+            margin-bottom: 2.5rem;
+        }
+
+        &::placeholder{
+            color: $Black;
+        }
+
+        &:focus{
+            outline: none;
+            border: 2px solid $Instock-blue;
+        }
+
+        @include desktop{
+            height: 94px;
+        }
+
+    }
+
+    &__data-container{
+        padding-top: 2rem;
+
+        @include tablet{
+            padding-top: 2.5rem;
+            border-top: 1px solid $Mercury;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+    }
+
+    &__submit{
+        @include mobile-text-paragraph;
+        width: 100%;
+        height: 48px;
+        color: white;
+        border: white;
+        background-color: $Instock-blue;
+        border-radius: 4px;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+
+        @include tablet{
+            @include desktab-text-paracomment;
+            width: 160px;
+            margin-left: 3rem;
+        }
+
+    }
+
+    &__cancel{
+        @include mobile-text-paragraph;
+        width: 100%;
+        height: 48px;
+        color: $Instock-blue;
+        border: none;
+        background-color: white;
+        font-weight: 600;
+
+        @include tablet{
+            @include desktab-text-paracomment;
+            width: min-content;
+        }
+    }
+}

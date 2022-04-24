@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.vidList {
+  padding-top: 40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .vidList {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.vidList__subheader {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "AvenirNextLTPro";
+  color: #AFAFAF;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .vidList__subheader {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "AvenirNextLTPro";
+  }
+}
+.vidList__container {
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 1280px) {
+  .vidList__container {
+    padding-bottom: 2rem;
+  }
+}
+.vidList__img {
+  width: 120px;
+  height: 70px;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.vidList__info-container {
+  flex: 1;
+  padding-left: 1rem;
+}
+.vidList__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "AvenirNextLTPro";
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .vidList__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "AvenirNextLTPro";
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .vidList__title {
+    -webkit-line-clamp: 3;
+    width: 70%;
+  }
+}
+.vidList__channel {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "AvenirNextLTPro";
+}
+@media screen and (min-width: 768px) {
+  .vidList__channel {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "AvenirNextLTPro";
+  }
+}/*# sourceMappingURL=VideoList.css.map */
