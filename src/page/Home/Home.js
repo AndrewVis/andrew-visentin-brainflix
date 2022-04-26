@@ -24,12 +24,6 @@ class Home extends Component {
             .catch(error => console.log(error))
     }
 
-    componentDidUpdate(prevProps) {
-        if (prevProps.match.params.id !== this.props.match.params.id) {
-            this.getVideoId(this.props.match.params.id)
-        }
-    }
-
     componentDidMount() {
         API_CALLS.getVideos()
             .then((response) => {
@@ -40,13 +34,20 @@ class Home extends Component {
                 this.getVideoId(id);
             });
     }
+    
+    componentDidUpdate(prevProps) {
+        if (prevProps.match.params.id !== this.props.match.params.id) {
+            this.getVideoId(this.props.match.params.id)
+        }
+    }
+
 
     LoadingScreen = () => {
         window.setTimeout(() => {
             return (
-                <h2> Gimme a chance boss</h2 >
+                <h2> </h2 >
             )
-        }, 1000)
+        }, 5000)
     }
 
     handleSubmit = (event) => {
@@ -86,12 +87,15 @@ class Home extends Component {
     }
 
     render() {
+        
         if (!this.state.selectedVideo) {
-            return this.LoadingScreen;
+            return <p>Loading</p>;
         }
+        
+
 
         const filteredVids = this.state.videoDetails.filter(vid => vid.id !== this.state.selectedVideo.id);
-
+        
         return (
             <div className="Home">
                 <Videoplayer selectedVideo={this.state.selectedVideo} />

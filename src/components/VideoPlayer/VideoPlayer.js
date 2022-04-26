@@ -2,17 +2,14 @@ import React from 'react'
 import '../VideoPlayer/VideoPlayer.scss'
 
 
-const Videoplayer = (props) => {
-    const selectedVideo = props.videoPlayer
+function Videoplayer({ selectedVideo }) {
     return (
-        <div>
-            <video controls
-                className="hero__video"
-                poster={selectedVideo.image}
-                src={selectedVideo.video}
-            >
-            </video>
-        </div>
+        <video controls
+            className="hero__video"
+            poster={selectedVideo.image}
+            src={selectedVideo.video}
+        >
+        </video>
     )
 }
 
