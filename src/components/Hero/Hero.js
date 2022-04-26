@@ -3,8 +3,7 @@ import viewsIcon from '../../assets/images/views.svg'
 import likesIcon from '../../assets/images/likes.svg'
 import FormatDate from '../../utils/FormatDate'
 
-const Hero = (props) => {
-    const selectedVideo = props.hero;
+function Hero({ selectedVideo }) {
 
     return (
         <div>
@@ -22,7 +21,7 @@ const Hero = (props) => {
                                     <img className='hero__view-icon' alt="icon shaped as an eye " src={viewsIcon}></img>
                                     {selectedVideo.views}</div>
                                 <div className="hero__likes">
-                                    <img className='hero__like-icon' alt="icon shaped as an heart" src={likesIcon}></img>
+                                    <img className='hero__like-icon' alt="icon shaped as an heart" src={viewsIcon}></img>
                                     {selectedVideo.likes}</div>
                             </div>
                         </div>

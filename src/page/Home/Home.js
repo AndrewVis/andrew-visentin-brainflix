@@ -92,6 +92,7 @@ class Home extends Component {
             return <p>Loading</p>;
         }
         
+        console.log(this.state.selectedVideo)
 
 
         const filteredVids = this.state.videoDetails.filter(vid => vid.id !== this.state.selectedVideo.id);
