@@ -22,6 +22,12 @@
         }
     }
 
+    &__click {
+        text-decoration: none;
+        color: $Black;
+    }
+
+
     &__container{
         display: flex;
         padding-bottom: 1.5rem;
