@@ -4,9 +4,7 @@ import Comments from '../../components/Comments/Comments'
 import { Component } from 'react';
 import VideoList from '../../components/VideoList/VideoList';
 import Videoplayer from '../../components/VideoPlayer/VideoPlayer';
-import { API_CALLS, API_URL, API_KEY } from '../../utils/API';
-import axios from 'axios';
-
+import { API_CALLS, } from '../../utils/api';
 
 
 class Home extends Component {
@@ -41,24 +39,17 @@ class Home extends Component {
         }
     }
 
-
-    LoadingScreen = () => {
-        window.setTimeout(() => {
-            return (
-                <h2> </h2 >
-            )
-        }, 5000)
-    }
-
     handleSubmit = (event) => {
         event.preventDefault();
         const userComment = event.target.commentForm.value
         const id = this.state.selectedVideo.id
 
-        axios.post(`${API_URL}/videos/${id}/comments${API_KEY}`, {
-            name: 'BrainStation Man',
-            comment: userComment
-        })
+        const comment = {
+            'name': 'BrainStation',
+            'comment': userComment,
+        }
+        API_CALLS.postComments(id, comment)
+
             .then((response) => {
                 this.setState({
                     selectedVideo: {
@@ -75,9 +66,9 @@ class Home extends Component {
 
 
     handleClick = (commentId) => {
-        const { id } = this.state.selectedVideo
+        const id = this.state.selectedVideo.id
+        API_CALLS.deleteComments(id, commentId)
 
-        axios.delete(`${API_URL}/videos/${id}/comments/${commentId}${API_KEY}`)
             .then(response => {
                 this.getVideoId(id)
             })
@@ -89,7 +80,9 @@ class Home extends Component {
     render() {
         
         if (!this.state.selectedVideo) {
-            return <p>Loading</p>;
+            return window.setTimeout(() => {
+                <h2>Lets go</h2>
+            }, 100)    
         }
         
         console.log(this.state.selectedVideo)
