@@ -4,7 +4,7 @@ import Comments from '../../components/Comments/Comments'
 import { Component } from 'react';
 import VideoList from '../../components/VideoList/VideoList';
 import Videoplayer from '../../components/VideoPlayer/VideoPlayer';
-import { API_CALLS, } from '../../utils/api';
+import { API_CALLS, } from '../../utils/API';
 
 
 class Home extends Component {
